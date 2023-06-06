@@ -1,5 +1,5 @@
-import Profile from 'components/Profile/Profile';
-import Section from 'components/Section/Section';
+import { Profile } from 'components/Profile/Profile';
+import { Section } from 'components/Section/Section';
 import user from 'data/user.json';
 //import Profile from './Profile/Profile';
 const { username, tag, location, avatar, stats } = user;
@@ -13,4 +13,3 @@ export const App = () => {
     </div>
   );
 };
-console.log(Profile);
