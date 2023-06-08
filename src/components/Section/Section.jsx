@@ -1,10 +1,24 @@
 import PropTypes from 'prop-types';
+import { Box } from 'components/Box';
+import { Title } from 'components/Section/Section.styled';
+
 export const Section = ({ title, children }) => {
   return (
-    <section>
-      <div>{title && <h2>{title}</h2>}</div>
+    <Box
+      m="50px auto"
+      py={5}
+      width="700px"
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      flexDirection="column"
+      borderRadius="normal"
+      boxShadow="normal"
+      bg="primary"
+    >
+      {title && <Title>{title}</Title>}
       {children}
-    </section>
+    </Box>
   );
 };
 
