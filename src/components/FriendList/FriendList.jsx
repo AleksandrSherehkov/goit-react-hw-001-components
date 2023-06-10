@@ -14,7 +14,6 @@ export const FriendList = ({ friends }) => {
       justifyContent="center"
       alignItems="center"
       borderRadius="normal"
-      boxShadow="normal"
       bg="background"
       as="ul"
     >
