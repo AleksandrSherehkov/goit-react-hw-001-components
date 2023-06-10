@@ -15,6 +15,7 @@ export const Section = ({ title, children }) => {
       borderRadius="normal"
       boxShadow="normal"
       bg="primary"
+      as="section"
     >
       {title && <Title>{title}</Title>}
       {children}

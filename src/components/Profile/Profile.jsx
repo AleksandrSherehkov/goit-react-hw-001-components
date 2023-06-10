@@ -29,10 +29,10 @@ export const Profile = ({
         <Text fontWeight="bold" color="black">
           {username}
         </Text>
-        <Text fontWeight="normal" color="text">
+        <Text fontWeight="normal" color="muted">
           @{tag}
         </Text>
-        <Text fontWeight="normal" color="text">
+        <Text fontWeight="normal" color="muted">
           {location}
         </Text>
       </Box>
@@ -44,7 +44,7 @@ export const Profile = ({
         justifyContent="space-between"
         alignItems="center"
         borderTop="medium"
-        borderTopColor="primary"
+        borderTopColor="border"
         bg="secondary"
         as="ul"
       >
@@ -56,10 +56,10 @@ export const Profile = ({
           alignItems="center"
           gridGap={3}
           borderRight="medium"
-          borderRightColor="primary"
+          borderRightColor="border"
           as="li"
         >
-          <Text fontWeight="normal" fontSize="xs" color="text" as="span">
+          <Text fontWeight="normal" fontSize="xs" color="muted" as="span">
             Followers
           </Text>
           <Text fontWeight="bold" color="black">
@@ -74,10 +74,10 @@ export const Profile = ({
           flexDirection="column"
           alignItems="center"
           borderRight="medium"
-          borderRightColor="primary"
+          borderRightColor="border"
           as="li"
         >
-          <Text fontWeight="normal" fontSize="xs" color="text" as="span">
+          <Text fontWeight="normal" fontSize="xs" color="muted" as="span">
             Views
           </Text>
           <Text fontWeight="bold" color="black">
@@ -93,7 +93,7 @@ export const Profile = ({
           alignItems="center"
           as="li"
         >
-          <Text fontWeight="normal" fontSize="xs" color="text" as="span">
+          <Text fontWeight="normal" fontSize="xs" color="muted" as="span">
             Likes
           </Text>
           <Text fontWeight="bold" color="black">
