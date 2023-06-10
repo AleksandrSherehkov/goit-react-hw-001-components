@@ -1,5 +1,7 @@
 export const theme = {
   colors: {
+    sucses: 'green',
+    failed: 'red',
     black: '#4b525e',
     white: '#fff',
     text: '#a1abb6',
