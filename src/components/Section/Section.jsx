@@ -8,11 +8,7 @@ export const Section = ({ title, children }) => {
       m="50px auto"
       py={5}
       width="700px"
-      display="flex"
-      justifyContent="center"
-      alignItems="center"
       flexDirection="column"
-      borderRadius="normal"
       boxShadow="normal"
       bg="primary"
       as="section"

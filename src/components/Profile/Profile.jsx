@@ -12,37 +12,18 @@ export const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <Box
-      mt={4}
-      pt={5}
-      width="250px"
-      display="flex"
-      flexDirection="column"
-      justifyContent="center"
-      alignItems="center"
-      borderRadius="normal"
-      boxShadow="normal"
-      bg="background"
-    >
-      <Box display="flex" flexDirection="column" alignItems="center" gridGap={4}>
+    <Box mt={4} pt={5} width="250px" flexDirection="column" boxShadow="normal" bg="background">
+      <Box display="flex" flexDirection="column" gridGap={4}>
         <Avatar src={avatar ?? defaultimg} alt="User avatar" />
-        <Text fontWeight="bold" color="black">
-          {username}
-        </Text>
-        <Text fontWeight="normal" color="muted">
-          @{tag}
-        </Text>
-        <Text fontWeight="normal" color="muted">
-          {location}
-        </Text>
+        <Text fontWeight="bold">{username}</Text>
+        <Text color="muted">@{tag}</Text>
+        <Text color="muted">{location}</Text>
       </Box>
 
       <Box
         mt={5}
         width="100%"
-        display="flex"
         justifyContent="space-between"
-        alignItems="center"
         borderTop="medium"
         borderTopColor="border"
         bg="secondary"
@@ -51,54 +32,36 @@ export const Profile = ({
         <Box
           p={4}
           width="100%"
-          display="flex"
           flexDirection="column"
-          alignItems="center"
           gridGap={3}
           borderRight="medium"
           borderRightColor="border"
           as="li"
         >
-          <Text fontWeight="normal" fontSize="xs" color="muted" as="span">
+          <Text fontSize="xs" color="muted" as="span">
             Followers
           </Text>
-          <Text fontWeight="bold" color="black">
-            {followers}
-          </Text>
+          <Text fontWeight="bold">{followers}</Text>
         </Box>
         <Box
           p={4}
           width="100%"
-          display="flex"
           gridGap={3}
           flexDirection="column"
-          alignItems="center"
           borderRight="medium"
           borderRightColor="border"
           as="li"
         >
-          <Text fontWeight="normal" fontSize="xs" color="muted" as="span">
+          <Text fontSize="xs" color="muted" as="span">
             Views
           </Text>
-          <Text fontWeight="bold" color="black">
-            {views}
-          </Text>
+          <Text fontWeight="bold">{views}</Text>
         </Box>
-        <Box
-          p={4}
-          width="100%"
-          display="flex"
-          gridGap={3}
-          flexDirection="column"
-          alignItems="center"
-          as="li"
-        >
-          <Text fontWeight="normal" fontSize="xs" color="muted" as="span">
+        <Box p={4} width="100%" gridGap={3} flexDirection="column" as="li">
+          <Text fontSize="xs" color="muted" as="span">
             Likes
           </Text>
-          <Text fontWeight="bold" color="black">
-            {likes}
-          </Text>
+          <Text fontWeight="bold">{likes}</Text>
         </Box>
       </Box>
     </Box>

@@ -4,19 +4,7 @@ import { FriendListItem } from './../FriendListItem/FriendListItem';
 
 export const FriendList = ({ friends }) => {
   return (
-    <Box
-      mt={5}
-      p={5}
-      width="350px"
-      display="flex"
-      gridGap={4}
-      flexDirection="column"
-      justifyContent="center"
-      alignItems="center"
-      borderRadius="normal"
-      bg="background"
-      as="ul"
-    >
+    <Box mt={5} p={5} width="350px" gridGap={4} flexDirection="column" bg="background" as="ul">
       {friends.map(({ id, avatar, name, isOnline }) => {
         return <FriendListItem key={id} isOnline={isOnline} avatar={avatar} name={name} />;
       })}

@@ -7,11 +7,8 @@ export const FriendListItem = ({ isOnline, avatar, name }) => {
     <Box
       p={4}
       width="100%"
-      display="flex"
       gridGap={4}
       justifyContent="start"
-      alignItems="center"
-      borderRadius="normal"
       boxShadow="normal"
       bg="background"
       as="li"
@@ -25,9 +22,7 @@ export const FriendListItem = ({ isOnline, avatar, name }) => {
         as="span"
       ></Box>
       <img src={avatar} alt="User avatar" width="48" />
-      <Text fontWeight="normal" fontSize="l" color="black">
-        {name}
-      </Text>
+      <Text fontSize="l">{name}</Text>
     </Box>
   );
 };

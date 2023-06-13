@@ -5,19 +5,9 @@ import { randomHexColor } from 'assets/randomColor';
 
 export const Statistics = ({ title, statists }) => {
   return (
-    <Box
-      mt={5}
-      width="400px"
-      display="flex"
-      flexDirection="column"
-      justifyContent="center"
-      alignItems="center"
-      borderRadius="normal"
-      boxShadow="normal"
-      bg="background"
-    >
+    <Box mt={5} width="400px" flexDirection="column" boxShadow="normal" bg="background">
       {title && (
-        <Text mb={5} mt={5} fontWeight="bold" color="black" as="h2">
+        <Text mb={5} mt={5} fontWeight="bold" as="h2">
           {title}
         </Text>
       )}
@@ -28,18 +18,16 @@ export const Statistics = ({ title, statists }) => {
             <Box
               p={4}
               width="100%"
-              display="flex"
               flexDirection="column"
-              alignItems="center"
               gridGap={3}
               bg={randomHexColor()}
               as="li"
               key={id}
             >
-              <Text fontWeight="normal" fontSize="s" color="white" as="span">
+              <Text fontSize="s" color="white" as="span">
                 {label}
               </Text>
-              <Text fontWeight="normal" fontSize="24px" color="white" as="span">
+              <Text fontSize="24px" color="white" as="span">
                 {percentage}%
               </Text>
             </Box>

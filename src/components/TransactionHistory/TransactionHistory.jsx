@@ -4,18 +4,7 @@ import { StyledTable } from 'components/TransactionHistory/TransactionHistory.st
 
 export const TransactionHistory = ({ transactions }) => {
   return (
-    <Box
-      mt={5}
-      p={5}
-      width="600px"
-      display="flex"
-      gridGap={4}
-      flexDirection="column"
-      justifyContent="center"
-      alignItems="center"
-      borderRadius="normal"
-      bg="background"
-    >
+    <Box mt={5} p={5} width="600px" gridGap={4} flexDirection="column" bg="background">
       <StyledTable class="transaction-history">
         <thead>
           <tr>
