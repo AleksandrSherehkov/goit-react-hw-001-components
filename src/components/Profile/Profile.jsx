@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import defaultimg from 'assets/img/defaultimg.jpg';
 import { Avatar } from 'components/Profile/Profile.styled';
-import { Box } from 'components/Box';
-import { Text } from 'components/Text';
+import { Box } from 'Utilities/Styled/Box';
+import { Text } from 'Utilities/Styled/Text';
 
 export const Profile = ({
   username = 'User Name',

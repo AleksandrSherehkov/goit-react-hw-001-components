@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { Box } from 'components/Box';
-import { Text } from 'components/Text';
+import { Box } from 'Utilities/Styled/Box';
+import { Text } from 'Utilities/Styled/Text';
 
 export const FriendListItem = ({ isOnline, avatar, name }) => {
   return (

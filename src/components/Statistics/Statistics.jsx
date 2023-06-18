@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { Box } from 'components/Box';
-import { Text } from 'components/Text';
+import { Box } from 'Utilities/Styled/Box';
+import { Text } from 'Utilities/Styled/Text';
 import { randomHexColor } from 'assets/randomColor';
 
 export const Statistics = ({ title, statists }) => {
@@ -12,7 +12,14 @@ export const Statistics = ({ title, statists }) => {
         </Text>
       )}
 
-      <Box width="100%" display="flex" justifyContent="space-between" alignItems="center" as="ul">
+      <Box
+        width="100%"
+        display="flex"
+        justifyContent="space-between"
+        alignItems="center"
+        borderRadius="none"
+        as="ul"
+      >
         {statists.map(({ id, label, percentage }) => {
           return (
             <Box
@@ -21,6 +28,7 @@ export const Statistics = ({ title, statists }) => {
               flexDirection="column"
               gridGap={3}
               bg={randomHexColor()}
+              borderRadius="none"
               as="li"
               key={id}
             >
