@@ -8,13 +8,11 @@ import statists from 'data/statists.json';
 import friends from 'data/friends.json';
 import transactions from 'data/transactions.json';
 
-const { username, tag, location, avatar, stats } = user;
-
 export const App = () => {
   return (
     <>
       <Section title="1 - Профіль соціальної мережі">
-        <Profile username={username} tag={tag} location={location} avatar={avatar} stats={stats} />
+        <Profile {...user} />
       </Section>
       <Section title="2 - Секція статистики">
         <Statistics title="Upload stats" statists={statists} />
